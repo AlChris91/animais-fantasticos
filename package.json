@@ -1,0 +1,21 @@
+{
+  "name": "animais-fantasticos",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "dev": "webpack --mode development --watch ",
+    "build": "webpack --mode production "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/plugin-transform-runtime": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@babel/runtime": "^7.28.2",
+    "babel-loader": "^10.0.0",
+    "eslint": "^9.31.0",
+    "webpack": "^5.100.2",
+    "webpack-cli": "^6.0.1"
+  }
+}
