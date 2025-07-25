@@ -1,4 +1,4 @@
-import initAnimacaoScroll from "./modules/initAnimacaoScroll.js";
+import AnimacaoScroll from "./modules/animacaoScroll.js";
 import ScrollSuave from "./modules/initScrollSuave.js";
 import TabNav from "./modules/initTabNav.js";
 import Modal from "./modules/initModal.js";
@@ -26,16 +26,17 @@ const modal = new Modal(
 );
 modal.init();
 
+const animacaoScroll = new AnimacaoScroll(".js-scroll");
+animacaoScroll.init();
+
 const tooltip = new Tooltip("[data-tooltip]");
 tooltip.init();
 
 fetchAnimais("../../animaisapi.json", ".numeros-grid");
+fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
 
-console.log(fetchBitcoin);
-initAnimacaoScroll();
 initModal();
 initToolTip();
 initDropdownMenu();
 initMenuMobile();
 initFuncionamento();
-fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
