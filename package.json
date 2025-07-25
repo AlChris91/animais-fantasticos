@@ -4,7 +4,7 @@
   "main": "index.html",
   "scripts": {
     "dev": "webpack --mode development --watch ",
-    "build": "webpack --mode production --output public"
+    "build": "webpack --mode production "
   },
   "author": "",
   "license": "ISC",
